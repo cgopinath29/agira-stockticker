@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ticker_symbol: MyString
+  company: MyString
+  initial_stock_value: 9.99
+
+two:
+  ticker_symbol: MyString
+  company: MyString
+  initial_stock_value: 9.99

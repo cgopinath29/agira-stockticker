@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <%= csrf_meta_tags %>
+</head>
+<body>
+    <div class="container">
+        <% if user_signed_in? %>
+        <li><%= link_to "Upload CSV File", admin_new_path %></li>
+        <li><%= link_to "Set Stock Refresh Time", admin_new_refresh_time_path %></li>
+        <% end %><br>
+        <% if @all_stocks.any? %>
+        <h5><strong>Stock Values Updated Time : </strong><span id="upd-time">-</span></h5>
+        <table class="table table-hover" id="dispAllEx">
+            <thead style="background-color: #fafafa">
+                <tr>
+                    <th>Ticker Symbol</th>
+                    <th>Company</th>
+                    <th>Stock Value</th>
+                </tr>
+            </thead>
+            <tbody id="tblBodyLoad">
+                <%@all_stocks.each do |stock|%>
+                <tr>
+                    <td>
+                        <%= stock.ticker_symbol %>
+                    </td>
+                    <td>
+                        <%= stock.company %>
+                    </td>
+                    <td>
+                        <%= stock.initial_stock_value %>
+                    </td>
+                </tr>
+                <%end%>
+            </tbody>
+            <tbody id="tblBody"></tbody>
+        </table>
+        <div class="col-md-12 text-center" id ="graph-plot">
+            <canvas id="cvs" width="600" height="250">
+                [No canvas support]
+            </canvas>
+        </div>
+        <% else %>
+        <h4 class="text-center"> No Stocks Currently Available </h4>
+        <% end %>
+    </div>
+</body>
+<script>
+    $(document).ready(function() {
+        var refresh_time = "<%= $refresh_time %>"
+        setInterval(function() {
+            results();            
+        }, refresh_time);
+
+        var selStockId;
+        var plotGraph;
+
+        $(document).on('click', '.indiSelect', function(e) {
+            selStockId = $( this ).attr('id');
+            plotGraph = 1
+            scrollToGraph();
+            graph(selStockId);                
+        });
+        //Function Scroll to Graph
+        function scrollToGraph(){
+            var movePosition=$("#graph-plot").position();
+            $("html, body").animate({ scrollTop: movePosition.top - 100}, "fast");
+        }
+        function results() {
+            $.ajax({
+                url: "/admin/refresh_stock_values",
+                type: "POST",
+                beforeSend: function(xhr) {
+                    xhr.setRequestHeader('X-CSRF-Token', $('meta[name="csrf-token"]').attr('content'))
+                },
+                dataType: "JSON",
+                data: {},
+                success: function(data) {
+                    var dt = new Date();
+                    var time = dt.toLocaleString()
+                    $("#upd-time").empty();
+                    $("#upd-time").append(time);
+                    $('#tblBodyLoad').remove();
+                    $('#tblBody').empty();
+                    var response = data;
+                    $(function() {
+                        $.each(response, function(i, item) {
+                            var newRowContent = '<tr class="stkId"><td id ='+item.stk+'><a href="#" id="'+item.stk+'" class="indiSelect">'+item.ticker_symbol+'</a></td><td>'+item.company+'</td><td>'+item.stock_value+'</td></tr>'
+                            $("#dispAllEx #tblBody").append(newRowContent);
+                        });
+                    });
+                    if (plotGraph == 1){
+                        graph(selStockId);
+                    }
+                },
+                error: function() {}
+            });
+        }
+
+        function graph(stkid) {
+            $.ajax({
+                url: "/admin/refresh_graph",
+                type: "POST",
+                beforeSend: function(xhr) {
+                    xhr.setRequestHeader('X-CSRF-Token', $('meta[name="csrf-token"]').attr('content'))
+                },
+                dataType: "JSON",
+                data: {
+                    stockId: stkid
+                },
+                success: function(data) {
+                   RGraph.reset(document.getElementById('cvs'));
+                   var d =[];
+                   for(i=0; i < data.length; i++)
+                   {
+                      d.push(parseFloat(data[i]));
+                  }
+                  var max_val = Math.max.apply(Math,d);
+                  var min_val = Math.min.apply(Math,d);
+                  console.log(d);
+                  var line = new RGraph.Line({
+                    id: 'cvs',
+                    data: d,
+                    options: {
+                        ymax: max_val + 100,
+                        ymin: min_val - 100,
+                        hmargin: 10,
+                        linewidth: 2,
+                        tickmarks: 'endcircle',                
+                        textAccessible: true,
+                        textSize: 14
+                    }
+                }).trace2();
+
+              },
+              error: function() {}
+          });
+        }    
+    });
+</script>
+</html>

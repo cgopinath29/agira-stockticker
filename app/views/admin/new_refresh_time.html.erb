@@ -1,0 +1,9 @@
+<div class="container">
+	<div class="row">
+		<%= form_for @time, url: admin_create_path do |f| %>
+		<%= f.label :Refresh_Time_in_Seconds %>:
+		<%= f.text_field :seconds %><br />
+		<%= f.submit %>
+		<% end %>
+	</div>
+</div>
