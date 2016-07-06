@@ -1999,3 +1999,380 @@
  DEBUG [331241cb] Finished in 3.031 seconds with exit status 0 (successful).
  DEBUG [688b32d2] Running ~/.rvm/bin/rvm current as gopi@52.27.118.58
  DEBUG [688b32d2] Command: ~/.rvm/bin/rvm current
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-07-06 14:58:22 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [7f7e775a] Running ~/.rvm/bin/rvm version as gopi@52.27.118.58
+ DEBUG [7f7e775a] Command: ~/.rvm/bin/rvm version
+ DEBUG [7f7e775a] 	rvm 1.27.0 (latest) by Wayne E. Seguin <wayneeseguin@gmail.com>, Michal Papis <mpapis@gmail.com> [https://rvm.io/]
+ DEBUG [7f7e775a] 	
+ DEBUG [7f7e775a] Finished in 2.985 seconds with exit status 0 (successful).
+ DEBUG [085e8aa4] Running ~/.rvm/bin/rvm current as gopi@52.27.118.58
+ DEBUG [085e8aa4] Command: ~/.rvm/bin/rvm current
+ DEBUG [085e8aa4] 	ruby-2.2.0
+ DEBUG [085e8aa4] 	
+ DEBUG [085e8aa4] Finished in 2.954 seconds with exit status 0 (successful).
+ DEBUG [3f2631bd] Running ~/.rvm/bin/rvm ruby-2.2.0 do ruby --version as gopi@52.27.118.58
+ DEBUG [3f2631bd] Command: ~/.rvm/bin/rvm ruby-2.2.0 do ruby --version
+ DEBUG [3f2631bd] 	ruby 2.2.0p0 (2014-12-25 revision 49005) [x86_64-linux]
+ DEBUG [3f2631bd] 	
+ DEBUG [3f2631bd] Finished in 0.684 seconds with exit status 0 (successful).
+  INFO [683772ba] Running /usr/bin/env mkdir -p /tmp/stock/ as gopi@52.27.118.58
+ DEBUG [683772ba] Command: /usr/bin/env mkdir -p /tmp/stock/
+  INFO [683772ba] Finished in 0.510 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/stock/git-ssh.sh 0.0%
+  INFO Uploading /tmp/stock/git-ssh.sh 100.0%
+  INFO [83754810] Running /usr/bin/env chmod +rx /tmp/stock/git-ssh.sh as gopi@52.27.118.58
+ DEBUG [83754810] Command: /usr/bin/env chmod +rx /tmp/stock/git-ssh.sh
+  INFO [83754810] Finished in 0.474 seconds with exit status 0 (successful).
+  INFO [f59166e7] Running /usr/bin/env git ls-remote --heads git@github.com:cgopinath29/agira-stockticker.git as gopi@52.27.118.58
+ DEBUG [f59166e7] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/stock/git-ssh.sh" ; /usr/bin/env git ls-remote --heads git@github.com:cgopinath29/agira-stockticker.git )
+ DEBUG [f59166e7] 	edec858a6983a7dc9535bdadf123408b62a49fd8
+ DEBUG [f59166e7] 		
+ DEBUG [f59166e7] 	refs/heads/master
+ DEBUG [f59166e7] 	
+  INFO [f59166e7] Finished in 2.124 seconds with exit status 0 (successful).
+  INFO [4a19fb50] Running /usr/bin/env mkdir -p /home/gopi/stock/shared /home/gopi/stock/releases as gopi@52.27.118.58
+ DEBUG [4a19fb50] Command: /usr/bin/env mkdir -p /home/gopi/stock/shared /home/gopi/stock/releases
+  INFO [4a19fb50] Finished in 0.486 seconds with exit status 0 (successful).
+  INFO [43df4970] Running /usr/bin/env mkdir -p /home/gopi/stock/shared/bin /home/gopi/stock/shared/log /home/gopi/stock/shared/tmp/pids /home/gopi/stock/shared/tmp/cache /home/gopi/stock/shared/tmp/sockets /home/gopi/stock/shared/vendor/bundle /home/gopi/stock/shared/public/system /home/gopi/stock/shared/public/uploads /home/gopi/stock/shared/public/assets as gopi@52.27.118.58
+ DEBUG [43df4970] Command: /usr/bin/env mkdir -p /home/gopi/stock/shared/bin /home/gopi/stock/shared/log /home/gopi/stock/shared/tmp/pids /home/gopi/stock/shared/tmp/cache /home/gopi/stock/shared/tmp/sockets /home/gopi/stock/shared/vendor/bundle /home/gopi/stock/shared/public/system /home/gopi/stock/shared/public/uploads /home/gopi/stock/shared/public/assets
+  INFO [43df4970] Finished in 0.484 seconds with exit status 0 (successful).
+  INFO [76125b04] Running /usr/bin/env mkdir -p /home/gopi/stock/shared/config as gopi@52.27.118.58
+ DEBUG [76125b04] Command: /usr/bin/env mkdir -p /home/gopi/stock/shared/config
+  INFO [76125b04] Finished in 0.468 seconds with exit status 0 (successful).
+ DEBUG [0ad46fa0] Running [ -f /home/gopi/stock/shared/config/database.yml ] as gopi@52.27.118.58
+ DEBUG [0ad46fa0] Command: [ -f /home/gopi/stock/shared/config/database.yml ]
+ DEBUG [0ad46fa0] Finished in 0.476 seconds with exit status 0 (successful).
+ DEBUG [3747607f] Running [ -f /home/gopi/stock/shared/config/application.yml ] as gopi@52.27.118.58
+ DEBUG [3747607f] Command: [ -f /home/gopi/stock/shared/config/application.yml ]
+ DEBUG [3747607f] Finished in 1.208 seconds with exit status 0 (successful).
+ DEBUG [e3cb7914] Running [ -f /home/gopi/stock/shared/puma.rb ] as gopi@52.27.118.58
+ DEBUG [e3cb7914] Command: [ -f /home/gopi/stock/shared/puma.rb ]
+ DEBUG [e3cb7914] Finished in 0.468 seconds with exit status 0 (successful).
+ DEBUG [005b3270] Running [ -f /home/gopi/stock/current/REVISION ] as gopi@52.27.118.58
+ DEBUG [005b3270] Command: [ -f /home/gopi/stock/current/REVISION ]
+ DEBUG [005b3270] Finished in 0.471 seconds with exit status 1 (failed).
+ DEBUG [f6026ef5] Running [ -f /home/gopi/stock/repo/HEAD ] as gopi@52.27.118.58
+ DEBUG [f6026ef5] Command: [ -f /home/gopi/stock/repo/HEAD ]
+ DEBUG [f6026ef5] Finished in 0.459 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/gopi/stock/repo
+ DEBUG [bed6e21f] Running if test ! -d /home/gopi/stock/repo; then echo "Directory does not exist '/home/gopi/stock/repo'" 1>&2; false; fi as gopi@52.27.118.58
+ DEBUG [bed6e21f] Command: if test ! -d /home/gopi/stock/repo; then echo "Directory does not exist '/home/gopi/stock/repo'" 1>&2; false; fi
+ DEBUG [bed6e21f] Finished in 1.197 seconds with exit status 0 (successful).
+  INFO [c5b437cc] Running /usr/bin/env git remote update --prune as gopi@52.27.118.58
+ DEBUG [c5b437cc] Command: cd /home/gopi/stock/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/stock/git-ssh.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [c5b437cc] 	Fetching origin
+ DEBUG [c5b437cc] 	
+ DEBUG [c5b437cc] 	remote: Counting objects: 7, done.[K
+ DEBUG [c5b437cc] 	
+ DEBUG [c5b437cc] 	remote: Compressing objects:  50% (1/2)   [K
+ DEBUG [c5b437cc] 	remote: Compressing objects: 100% (2/2)   [K
+ DEBUG [c5b437cc] 	remote: Compressing objects: 100% (2/2), done.[K
+ DEBUG [c5b437cc] 	
+ DEBUG [c5b437cc] 	remote: Total 7 (delta 5), reused 7 (delta 5), pack-reused 0[K
+ DEBUG [c5b437cc] 	
+ DEBUG [c5b437cc] 	Unpacking objects:  14% (1/7)   
+ DEBUG [c5b437cc] 	Unpacking objects:  28% (2/7)   
+ DEBUG [c5b437cc] 	Unpacking objects:  42% (3/7)   
+ DEBUG [c5b437cc] 	Unpacking objects:  57% (4/7)   
+ DEBUG [c5b437cc] 	Unpacking objects:  71% (5/7)   
+ DEBUG [c5b437cc] 	Unpacking objects:  85% (6/7)   
+ DEBUG [c5b437cc] 	Unpacking objects: 100% (7/7)   
+ DEBUG [c5b437cc] 	Unpacking objects: 100% (7/7), done.
+ DEBUG [c5b437cc] 	
+ DEBUG [c5b437cc] 	From github.com:cgopinath29/agira-stockticker
+ DEBUG [c5b437cc] 	
+ DEBUG [c5b437cc] 	   99a89a4..edec858  master     -> master
+ DEBUG [c5b437cc] 	
+  INFO [c5b437cc] Finished in 2.287 seconds with exit status 0 (successful).
+ DEBUG [5e5b0315] Running if test ! -d /home/gopi/stock/repo; then echo "Directory does not exist '/home/gopi/stock/repo'" 1>&2; false; fi as gopi@52.27.118.58
+ DEBUG [5e5b0315] Command: if test ! -d /home/gopi/stock/repo; then echo "Directory does not exist '/home/gopi/stock/repo'" 1>&2; false; fi
+ DEBUG [5e5b0315] Finished in 0.486 seconds with exit status 0 (successful).
+  INFO [1b7bcf7e] Running /usr/bin/env mkdir -p /home/gopi/stock/releases/20160706092837 as gopi@52.27.118.58
+ DEBUG [1b7bcf7e] Command: cd /home/gopi/stock/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/stock/git-ssh.sh" ; /usr/bin/env mkdir -p /home/gopi/stock/releases/20160706092837 )
+  INFO [1b7bcf7e] Finished in 0.471 seconds with exit status 0 (successful).
+  INFO [1bebb38c] Running /usr/bin/env git archive master | tar -x -f - -C /home/gopi/stock/releases/20160706092837 as gopi@52.27.118.58
+ DEBUG [1bebb38c] Command: cd /home/gopi/stock/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/stock/git-ssh.sh" ; /usr/bin/env git archive master | tar -x -f - -C /home/gopi/stock/releases/20160706092837 )
+  INFO [1bebb38c] Finished in 0.496 seconds with exit status 0 (successful).
+ DEBUG [7aff83af] Running if test ! -d /home/gopi/stock/repo; then echo "Directory does not exist '/home/gopi/stock/repo'" 1>&2; false; fi as gopi@52.27.118.58
+ DEBUG [7aff83af] Command: if test ! -d /home/gopi/stock/repo; then echo "Directory does not exist '/home/gopi/stock/repo'" 1>&2; false; fi
+ DEBUG [7aff83af] Finished in 0.462 seconds with exit status 0 (successful).
+ DEBUG [eda90850] Running /usr/bin/env git rev-list --max-count=1 master as gopi@52.27.118.58
+ DEBUG [eda90850] Command: cd /home/gopi/stock/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/stock/git-ssh.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [eda90850] 	edec858a6983a7dc9535bdadf123408b62a49fd8
+ DEBUG [eda90850] 	
+ DEBUG [eda90850] Finished in 0.460 seconds with exit status 0 (successful).
+ DEBUG [3901e68c] Running if test ! -d /home/gopi/stock/releases/20160706092837; then echo "Directory does not exist '/home/gopi/stock/releases/20160706092837'" 1>&2; false; fi as gopi@52.27.118.58
+ DEBUG [3901e68c] Command: if test ! -d /home/gopi/stock/releases/20160706092837; then echo "Directory does not exist '/home/gopi/stock/releases/20160706092837'" 1>&2; false; fi
+ DEBUG [3901e68c] Finished in 0.462 seconds with exit status 0 (successful).
+  INFO [8da9042f] Running /usr/bin/env echo "edec858a6983a7dc9535bdadf123408b62a49fd8" >> REVISION as gopi@52.27.118.58
+ DEBUG [8da9042f] Command: cd /home/gopi/stock/releases/20160706092837 && /usr/bin/env echo "edec858a6983a7dc9535bdadf123408b62a49fd8" >> REVISION
+  INFO [8da9042f] Finished in 0.462 seconds with exit status 0 (successful).
+  INFO [dd7b93dd] Running /usr/bin/env mkdir -p /home/gopi/stock/releases/20160706092837/config as gopi@52.27.118.58
+ DEBUG [dd7b93dd] Command: /usr/bin/env mkdir -p /home/gopi/stock/releases/20160706092837/config
+  INFO [dd7b93dd] Finished in 0.459 seconds with exit status 0 (successful).
+ DEBUG [db23561b] Running [ -L /home/gopi/stock/releases/20160706092837/config/database.yml ] as gopi@52.27.118.58
+ DEBUG [db23561b] Command: [ -L /home/gopi/stock/releases/20160706092837/config/database.yml ]
+ DEBUG [db23561b] Finished in 0.467 seconds with exit status 1 (failed).
+ DEBUG [fe98da33] Running [ -f /home/gopi/stock/releases/20160706092837/config/database.yml ] as gopi@52.27.118.58
+ DEBUG [fe98da33] Command: [ -f /home/gopi/stock/releases/20160706092837/config/database.yml ]
+ DEBUG [fe98da33] Finished in 0.477 seconds with exit status 0 (successful).
+  INFO [bf453afd] Running /usr/bin/env rm /home/gopi/stock/releases/20160706092837/config/database.yml as gopi@52.27.118.58
+ DEBUG [bf453afd] Command: /usr/bin/env rm /home/gopi/stock/releases/20160706092837/config/database.yml
+  INFO [bf453afd] Finished in 0.471 seconds with exit status 0 (successful).
+  INFO [7b84e373] Running /usr/bin/env ln -s /home/gopi/stock/shared/config/database.yml /home/gopi/stock/releases/20160706092837/config/database.yml as gopi@52.27.118.58
+ DEBUG [7b84e373] Command: /usr/bin/env ln -s /home/gopi/stock/shared/config/database.yml /home/gopi/stock/releases/20160706092837/config/database.yml
+  INFO [7b84e373] Finished in 0.457 seconds with exit status 0 (successful).
+ DEBUG [8ae6d15e] Running [ -L /home/gopi/stock/releases/20160706092837/config/application.yml ] as gopi@52.27.118.58
+ DEBUG [8ae6d15e] Command: [ -L /home/gopi/stock/releases/20160706092837/config/application.yml ]
+ DEBUG [8ae6d15e] Finished in 0.461 seconds with exit status 1 (failed).
+ DEBUG [f14e9af2] Running [ -f /home/gopi/stock/releases/20160706092837/config/application.yml ] as gopi@52.27.118.58
+ DEBUG [f14e9af2] Command: [ -f /home/gopi/stock/releases/20160706092837/config/application.yml ]
+ DEBUG [f14e9af2] Finished in 0.466 seconds with exit status 1 (failed).
+  INFO [aadd7256] Running /usr/bin/env ln -s /home/gopi/stock/shared/config/application.yml /home/gopi/stock/releases/20160706092837/config/application.yml as gopi@52.27.118.58
+ DEBUG [aadd7256] Command: /usr/bin/env ln -s /home/gopi/stock/shared/config/application.yml /home/gopi/stock/releases/20160706092837/config/application.yml
+  INFO [aadd7256] Finished in 0.471 seconds with exit status 0 (successful).
+  INFO [dbdb2b52] Running /usr/bin/env mkdir -p /home/gopi/stock/releases/20160706092837 /home/gopi/stock/releases/20160706092837/tmp /home/gopi/stock/releases/20160706092837/vendor /home/gopi/stock/releases/20160706092837/public as gopi@52.27.118.58
+ DEBUG [dbdb2b52] Command: /usr/bin/env mkdir -p /home/gopi/stock/releases/20160706092837 /home/gopi/stock/releases/20160706092837/tmp /home/gopi/stock/releases/20160706092837/vendor /home/gopi/stock/releases/20160706092837/public
+  INFO [dbdb2b52] Finished in 0.461 seconds with exit status 0 (successful).
+ DEBUG [d41d4732] Running [ -L /home/gopi/stock/releases/20160706092837/bin ] as gopi@52.27.118.58
+ DEBUG [d41d4732] Command: [ -L /home/gopi/stock/releases/20160706092837/bin ]
+ DEBUG [d41d4732] Finished in 0.478 seconds with exit status 1 (failed).
+ DEBUG [50fa8b94] Running [ -d /home/gopi/stock/releases/20160706092837/bin ] as gopi@52.27.118.58
+ DEBUG [50fa8b94] Command: [ -d /home/gopi/stock/releases/20160706092837/bin ]
+ DEBUG [50fa8b94] Finished in 0.462 seconds with exit status 0 (successful).
+  INFO [bd33d207] Running /usr/bin/env rm -rf /home/gopi/stock/releases/20160706092837/bin as gopi@52.27.118.58
+ DEBUG [bd33d207] Command: /usr/bin/env rm -rf /home/gopi/stock/releases/20160706092837/bin
+  INFO [bd33d207] Finished in 0.458 seconds with exit status 0 (successful).
+  INFO [343121e9] Running /usr/bin/env ln -s /home/gopi/stock/shared/bin /home/gopi/stock/releases/20160706092837/bin as gopi@52.27.118.58
+ DEBUG [343121e9] Command: /usr/bin/env ln -s /home/gopi/stock/shared/bin /home/gopi/stock/releases/20160706092837/bin
+  INFO [343121e9] Finished in 0.458 seconds with exit status 0 (successful).
+ DEBUG [90fdfb29] Running [ -L /home/gopi/stock/releases/20160706092837/log ] as gopi@52.27.118.58
+ DEBUG [90fdfb29] Command: [ -L /home/gopi/stock/releases/20160706092837/log ]
+ DEBUG [90fdfb29] Finished in 0.456 seconds with exit status 1 (failed).
+ DEBUG [755a37e8] Running [ -d /home/gopi/stock/releases/20160706092837/log ] as gopi@52.27.118.58
+ DEBUG [755a37e8] Command: [ -d /home/gopi/stock/releases/20160706092837/log ]
+ DEBUG [755a37e8] Finished in 0.467 seconds with exit status 0 (successful).
+  INFO [c442d275] Running /usr/bin/env rm -rf /home/gopi/stock/releases/20160706092837/log as gopi@52.27.118.58
+ DEBUG [c442d275] Command: /usr/bin/env rm -rf /home/gopi/stock/releases/20160706092837/log
+  INFO [c442d275] Finished in 0.468 seconds with exit status 0 (successful).
+  INFO [be65dff1] Running /usr/bin/env ln -s /home/gopi/stock/shared/log /home/gopi/stock/releases/20160706092837/log as gopi@52.27.118.58
+ DEBUG [be65dff1] Command: /usr/bin/env ln -s /home/gopi/stock/shared/log /home/gopi/stock/releases/20160706092837/log
+  INFO [be65dff1] Finished in 0.467 seconds with exit status 0 (successful).
+ DEBUG [0361be62] Running [ -L /home/gopi/stock/releases/20160706092837/tmp/pids ] as gopi@52.27.118.58
+ DEBUG [0361be62] Command: [ -L /home/gopi/stock/releases/20160706092837/tmp/pids ]
+ DEBUG [0361be62] Finished in 0.473 seconds with exit status 1 (failed).
+ DEBUG [e97f4885] Running [ -d /home/gopi/stock/releases/20160706092837/tmp/pids ] as gopi@52.27.118.58
+ DEBUG [e97f4885] Command: [ -d /home/gopi/stock/releases/20160706092837/tmp/pids ]
+ DEBUG [e97f4885] Finished in 0.457 seconds with exit status 1 (failed).
+  INFO [82f8a434] Running /usr/bin/env ln -s /home/gopi/stock/shared/tmp/pids /home/gopi/stock/releases/20160706092837/tmp/pids as gopi@52.27.118.58
+ DEBUG [82f8a434] Command: /usr/bin/env ln -s /home/gopi/stock/shared/tmp/pids /home/gopi/stock/releases/20160706092837/tmp/pids
+  INFO [82f8a434] Finished in 0.475 seconds with exit status 0 (successful).
+ DEBUG [0ec071c1] Running [ -L /home/gopi/stock/releases/20160706092837/tmp/cache ] as gopi@52.27.118.58
+ DEBUG [0ec071c1] Command: [ -L /home/gopi/stock/releases/20160706092837/tmp/cache ]
+ DEBUG [0ec071c1] Finished in 0.464 seconds with exit status 1 (failed).
+ DEBUG [def14463] Running [ -d /home/gopi/stock/releases/20160706092837/tmp/cache ] as gopi@52.27.118.58
+ DEBUG [def14463] Command: [ -d /home/gopi/stock/releases/20160706092837/tmp/cache ]
+ DEBUG [def14463] Finished in 0.461 seconds with exit status 0 (successful).
+  INFO [1790aae9] Running /usr/bin/env rm -rf /home/gopi/stock/releases/20160706092837/tmp/cache as gopi@52.27.118.58
+ DEBUG [1790aae9] Command: /usr/bin/env rm -rf /home/gopi/stock/releases/20160706092837/tmp/cache
+  INFO [1790aae9] Finished in 0.461 seconds with exit status 0 (successful).
+  INFO [039946b3] Running /usr/bin/env ln -s /home/gopi/stock/shared/tmp/cache /home/gopi/stock/releases/20160706092837/tmp/cache as gopi@52.27.118.58
+ DEBUG [039946b3] Command: /usr/bin/env ln -s /home/gopi/stock/shared/tmp/cache /home/gopi/stock/releases/20160706092837/tmp/cache
+  INFO [039946b3] Finished in 0.458 seconds with exit status 0 (successful).
+ DEBUG [1813f4ca] Running [ -L /home/gopi/stock/releases/20160706092837/tmp/sockets ] as gopi@52.27.118.58
+ DEBUG [1813f4ca] Command: [ -L /home/gopi/stock/releases/20160706092837/tmp/sockets ]
+ DEBUG [1813f4ca] Finished in 0.459 seconds with exit status 1 (failed).
+ DEBUG [ab282389] Running [ -d /home/gopi/stock/releases/20160706092837/tmp/sockets ] as gopi@52.27.118.58
+ DEBUG [ab282389] Command: [ -d /home/gopi/stock/releases/20160706092837/tmp/sockets ]
+ DEBUG [ab282389] Finished in 0.459 seconds with exit status 1 (failed).
+  INFO [1314e63b] Running /usr/bin/env ln -s /home/gopi/stock/shared/tmp/sockets /home/gopi/stock/releases/20160706092837/tmp/sockets as gopi@52.27.118.58
+ DEBUG [1314e63b] Command: /usr/bin/env ln -s /home/gopi/stock/shared/tmp/sockets /home/gopi/stock/releases/20160706092837/tmp/sockets
+  INFO [1314e63b] Finished in 0.456 seconds with exit status 0 (successful).
+ DEBUG [63717180] Running [ -L /home/gopi/stock/releases/20160706092837/vendor/bundle ] as gopi@52.27.118.58
+ DEBUG [63717180] Command: [ -L /home/gopi/stock/releases/20160706092837/vendor/bundle ]
+ DEBUG [63717180] Finished in 0.455 seconds with exit status 1 (failed).
+ DEBUG [2a22ab94] Running [ -d /home/gopi/stock/releases/20160706092837/vendor/bundle ] as gopi@52.27.118.58
+ DEBUG [2a22ab94] Command: [ -d /home/gopi/stock/releases/20160706092837/vendor/bundle ]
+ DEBUG [2a22ab94] Finished in 0.463 seconds with exit status 1 (failed).
+  INFO [b91fabc2] Running /usr/bin/env ln -s /home/gopi/stock/shared/vendor/bundle /home/gopi/stock/releases/20160706092837/vendor/bundle as gopi@52.27.118.58
+ DEBUG [b91fabc2] Command: /usr/bin/env ln -s /home/gopi/stock/shared/vendor/bundle /home/gopi/stock/releases/20160706092837/vendor/bundle
+  INFO [b91fabc2] Finished in 0.459 seconds with exit status 0 (successful).
+ DEBUG [2dde7239] Running [ -L /home/gopi/stock/releases/20160706092837/public/system ] as gopi@52.27.118.58
+ DEBUG [2dde7239] Command: [ -L /home/gopi/stock/releases/20160706092837/public/system ]
+ DEBUG [2dde7239] Finished in 0.457 seconds with exit status 1 (failed).
+ DEBUG [0259ec41] Running [ -d /home/gopi/stock/releases/20160706092837/public/system ] as gopi@52.27.118.58
+ DEBUG [0259ec41] Command: [ -d /home/gopi/stock/releases/20160706092837/public/system ]
+ DEBUG [0259ec41] Finished in 0.457 seconds with exit status 1 (failed).
+  INFO [508af422] Running /usr/bin/env ln -s /home/gopi/stock/shared/public/system /home/gopi/stock/releases/20160706092837/public/system as gopi@52.27.118.58
+ DEBUG [508af422] Command: /usr/bin/env ln -s /home/gopi/stock/shared/public/system /home/gopi/stock/releases/20160706092837/public/system
+  INFO [508af422] Finished in 0.460 seconds with exit status 0 (successful).
+ DEBUG [62ca2a8e] Running [ -L /home/gopi/stock/releases/20160706092837/public/uploads ] as gopi@52.27.118.58
+ DEBUG [62ca2a8e] Command: [ -L /home/gopi/stock/releases/20160706092837/public/uploads ]
+ DEBUG [62ca2a8e] Finished in 0.485 seconds with exit status 1 (failed).
+ DEBUG [187c96ab] Running [ -d /home/gopi/stock/releases/20160706092837/public/uploads ] as gopi@52.27.118.58
+ DEBUG [187c96ab] Command: [ -d /home/gopi/stock/releases/20160706092837/public/uploads ]
+ DEBUG [187c96ab] Finished in 1.176 seconds with exit status 1 (failed).
+  INFO [0cb3e621] Running /usr/bin/env ln -s /home/gopi/stock/shared/public/uploads /home/gopi/stock/releases/20160706092837/public/uploads as gopi@52.27.118.58
+ DEBUG [0cb3e621] Command: /usr/bin/env ln -s /home/gopi/stock/shared/public/uploads /home/gopi/stock/releases/20160706092837/public/uploads
+  INFO [0cb3e621] Finished in 0.464 seconds with exit status 0 (successful).
+ DEBUG [c9a0bca3] Running [ -L /home/gopi/stock/releases/20160706092837/public/assets ] as gopi@52.27.118.58
+ DEBUG [c9a0bca3] Command: [ -L /home/gopi/stock/releases/20160706092837/public/assets ]
+ DEBUG [c9a0bca3] Finished in 0.456 seconds with exit status 1 (failed).
+ DEBUG [d668f564] Running [ -d /home/gopi/stock/releases/20160706092837/public/assets ] as gopi@52.27.118.58
+ DEBUG [d668f564] Command: [ -d /home/gopi/stock/releases/20160706092837/public/assets ]
+ DEBUG [d668f564] Finished in 0.457 seconds with exit status 1 (failed).
+  INFO [615d21b1] Running /usr/bin/env ln -s /home/gopi/stock/shared/public/assets /home/gopi/stock/releases/20160706092837/public/assets as gopi@52.27.118.58
+ DEBUG [615d21b1] Command: /usr/bin/env ln -s /home/gopi/stock/shared/public/assets /home/gopi/stock/releases/20160706092837/public/assets
+  INFO [615d21b1] Finished in 0.456 seconds with exit status 0 (successful).
+ DEBUG [be3e83bb] Running if test ! -d /home/gopi/stock/releases/20160706092837; then echo "Directory does not exist '/home/gopi/stock/releases/20160706092837'" 1>&2; false; fi as gopi@52.27.118.58
+ DEBUG [be3e83bb] Command: if test ! -d /home/gopi/stock/releases/20160706092837; then echo "Directory does not exist '/home/gopi/stock/releases/20160706092837'" 1>&2; false; fi
+ DEBUG [be3e83bb] Finished in 0.456 seconds with exit status 0 (successful).
+  INFO [a1f9af83] Running ~/.rvm/bin/rvm ruby-2.2.0 do bundle install --path /home/gopi/stock/shared/bundle --without development test --deployment --quiet as gopi@52.27.118.58
+ DEBUG [a1f9af83] Command: cd /home/gopi/stock/releases/20160706092837 && ~/.rvm/bin/rvm ruby-2.2.0 do bundle install --path /home/gopi/stock/shared/bundle --without development test --deployment --quiet
+  INFO [a1f9af83] Finished in 1.959 seconds with exit status 0 (successful).
+ DEBUG [001687f8] Running if test ! -d /home/gopi/stock/releases/20160706092837; then echo "Directory does not exist '/home/gopi/stock/releases/20160706092837'" 1>&2; false; fi as gopi@52.27.118.58
+ DEBUG [001687f8] Command: if test ! -d /home/gopi/stock/releases/20160706092837; then echo "Directory does not exist '/home/gopi/stock/releases/20160706092837'" 1>&2; false; fi
+ DEBUG [001687f8] Finished in 0.456 seconds with exit status 0 (successful).
+  INFO [dbdb8e3b] Running ~/.rvm/bin/rvm ruby-2.2.0 do bundle exec rake assets:precompile as gopi@52.27.118.58
+ DEBUG [dbdb8e3b] Command: cd /home/gopi/stock/releases/20160706092837 && ( export RAILS_ENV="production" ; ~/.rvm/bin/rvm ruby-2.2.0 do bundle exec rake assets:precompile )
+ DEBUG [dbdb8e3b] 	I, [2016-07-06T09:28:25.514217 #644]  INFO -- : Writing /home/gopi/stock/releases/20160706092837/public/assets/application-b0426e496058d3d784915d30693e0d86e3f1908fa66e11169e89ec2d37658ebc.js
+ DEBUG [dbdb8e3b] 	
+ DEBUG [dbdb8e3b] 	I, [2016-07-06T09:28:25.514709 #644]  INFO -- : Writing /home/gopi/stock/releases/20160706092837/public/assets/application-b0426e496058d3d784915d30693e0d86e3f1908fa66e11169e89ec2d37658ebc.js.gz
+ DEBUG [dbdb8e3b] 	
+ DEBUG [dbdb8e3b] 	I, [2016-07-06T09:28:25.528995 #644]  INFO -- : Writing /home/gopi/stock/releases/20160706092837/public/assets/application-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css
+ DEBUG [dbdb8e3b] 	
+ DEBUG [dbdb8e3b] 	I, [2016-07-06T09:28:25.529210 #644]  INFO -- : Writing /home/gopi/stock/releases/20160706092837/public/assets/application-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css.gz
+ DEBUG [dbdb8e3b] 	
+  INFO [dbdb8e3b] Finished in 4.796 seconds with exit status 0 (successful).
+ DEBUG [ad4b3693] Running if test ! -d /home/gopi/stock/releases/20160706092837; then echo "Directory does not exist '/home/gopi/stock/releases/20160706092837'" 1>&2; false; fi as gopi@52.27.118.58
+ DEBUG [ad4b3693] Command: if test ! -d /home/gopi/stock/releases/20160706092837; then echo "Directory does not exist '/home/gopi/stock/releases/20160706092837'" 1>&2; false; fi
+ DEBUG [ad4b3693] Finished in 0.456 seconds with exit status 0 (successful).
+  INFO [79df06f2] Running /usr/bin/env mkdir -p /home/gopi/stock/releases/20160706092837/assets_manifest_backup as gopi@52.27.118.58
+ DEBUG [79df06f2] Command: cd /home/gopi/stock/releases/20160706092837 && /usr/bin/env mkdir -p /home/gopi/stock/releases/20160706092837/assets_manifest_backup
+  INFO [79df06f2] Finished in 0.471 seconds with exit status 0 (successful).
+ DEBUG [f810f7b5] Running /usr/bin/env ls /home/gopi/stock/releases/20160706092837/public/assets/.sprockets-manifest* as gopi@52.27.118.58
+ DEBUG [f810f7b5] Command: cd /home/gopi/stock/releases/20160706092837 && /usr/bin/env ls /home/gopi/stock/releases/20160706092837/public/assets/.sprockets-manifest*
+ DEBUG [f810f7b5] 	/home/gopi/stock/releases/20160706092837/public/assets/.sprockets-manifest-554d0f386adffc0b7375660e3493d134.json
+ DEBUG [f810f7b5] Finished in 0.472 seconds with exit status 0 (successful).
+ DEBUG [88d9f86e] Running /usr/bin/env ls /home/gopi/stock/releases/20160706092837/public/assets/.sprockets-manifest* as gopi@52.27.118.58
+ DEBUG [88d9f86e] Command: cd /home/gopi/stock/releases/20160706092837 && /usr/bin/env ls /home/gopi/stock/releases/20160706092837/public/assets/.sprockets-manifest*
+ DEBUG [88d9f86e] 	/home/gopi/stock/releases/20160706092837/public/assets/.sprockets-manifest-554d0f386adffc0b7375660e3493d134.json
+ DEBUG [88d9f86e] Finished in 0.473 seconds with exit status 0 (successful).
+  INFO [3c68d050] Running /usr/bin/env cp /home/gopi/stock/releases/20160706092837/public/assets/.sprockets-manifest-554d0f386adffc0b7375660e3493d134.json /home/gopi/stock/releases/20160706092837/assets_manifest_backup as gopi@52.27.118.58
+ DEBUG [3c68d050] Command: cd /home/gopi/stock/releases/20160706092837 && /usr/bin/env cp /home/gopi/stock/releases/20160706092837/public/assets/.sprockets-manifest-554d0f386adffc0b7375660e3493d134.json /home/gopi/stock/releases/20160706092837/assets_manifest_backup
+  INFO [3c68d050] Finished in 0.472 seconds with exit status 0 (successful).
+  INFO [deploy:migrate] Run `rake db:migrate`
+ DEBUG [1a9528c1] Running if test ! -d /home/gopi/stock/releases/20160706092837; then echo "Directory does not exist '/home/gopi/stock/releases/20160706092837'" 1>&2; false; fi as gopi@52.27.118.58
+ DEBUG [1a9528c1] Command: if test ! -d /home/gopi/stock/releases/20160706092837; then echo "Directory does not exist '/home/gopi/stock/releases/20160706092837'" 1>&2; false; fi
+ DEBUG [1a9528c1] Finished in 0.478 seconds with exit status 0 (successful).
+  INFO [35a828c0] Running ~/.rvm/bin/rvm ruby-2.2.0 do bundle exec rake db:migrate as gopi@52.27.118.58
+ DEBUG [35a828c0] Command: cd /home/gopi/stock/releases/20160706092837 && ( export RAILS_ENV="production" ; ~/.rvm/bin/rvm ruby-2.2.0 do bundle exec rake db:migrate )
+ DEBUG [35a828c0] 	== 20160612080824 CreateStocks: migrating =====================================
+ DEBUG [35a828c0] 	
+ DEBUG [35a828c0] 	-- create_table(:stocks)
+ DEBUG [35a828c0] 	
+ DEBUG [35a828c0] 	   -> 0.0201s
+== 20160612080824 CreateStocks: migrated (0.0202s) ============================
+
+ DEBUG [35a828c0] 	== 20160612080942 CreateStockValues: migrating ================================
+ DEBUG [35a828c0] 	
+ DEBUG [35a828c0] 	-- create_table(:stock_values)
+ DEBUG [35a828c0] 	
+ DEBUG [35a828c0] 	   -> 0.0139s
+ DEBUG [35a828c0] 	
+ DEBUG [35a828c0] 	== 20160612080942 CreateStockValues: migrated (0.0141s) =======================
+ DEBUG [35a828c0] 	
+ DEBUG [35a828c0] 	
+ DEBUG [35a828c0] 	== 20160613055151 AddSessionsTable: migrating =================================
+ DEBUG [35a828c0] 	
+ DEBUG [35a828c0] 	-- create_table(:sessions)
+ DEBUG [35a828c0] 	
+ DEBUG [35a828c0] 	   -> 0.0071s
+ DEBUG [35a828c0] 	
+ DEBUG [35a828c0] 	-- add_index(:sessions, :session_id, {:unique=>true})
+ DEBUG [35a828c0] 	
+ DEBUG [35a828c0] 	   -> 0.0039s
+ DEBUG [35a828c0] 	
+ DEBUG [35a828c0] 	-- add_index(:sessions, :updated_at)
+ DEBUG [35a828c0] 	
+ DEBUG [35a828c0] 	   -> 0.0036s
+ DEBUG [35a828c0] 	
+ DEBUG [35a828c0] 	== 20160613055151 AddSessionsTable: migrated (0.0150s) ========================
+ DEBUG [35a828c0] 	
+ DEBUG [35a828c0] 	
+ DEBUG [35a828c0] 	== 20160613143621 DeviseCreateUsers: migrating ================================
+ DEBUG [35a828c0] 	
+ DEBUG [35a828c0] 	-- create_table(:users)
+ DEBUG [35a828c0] 	
+ DEBUG [35a828c0] 	   -> 0.0068s
+ DEBUG [35a828c0] 	
+ DEBUG [35a828c0] 	-- add_index(:users, :email, {:unique=>true})
+ DEBUG [35a828c0] 	
+ DEBUG [35a828c0] 	   -> 0.0041s
+ DEBUG [35a828c0] 	
+ DEBUG [35a828c0] 	-- add_index(:users, :reset_password_token, {:unique=>true})
+ DEBUG [35a828c0] 	
+ DEBUG [35a828c0] 	   -> 0.0036s
+ DEBUG [35a828c0] 	
+ DEBUG [35a828c0] 	== 20160613143621 DeviseCreateUsers: migrated (0.0147s) =======================
+ DEBUG [35a828c0] 	
+ DEBUG [35a828c0] 	
+ DEBUG [35a828c0] 	== 20160613154436 CreateRefreshTimes: migrating ===============================
+ DEBUG [35a828c0] 	
+ DEBUG [35a828c0] 	-- create_table(:refresh_times)
+ DEBUG [35a828c0] 	
+ DEBUG [35a828c0] 	   -> 0.0036s
+ DEBUG [35a828c0] 	
+ DEBUG [35a828c0] 	== 20160613154436 CreateRefreshTimes: migrated (0.0037s) ======================
+ DEBUG [35a828c0] 	
+ DEBUG [35a828c0] 	
+  INFO [35a828c0] Finished in 2.549 seconds with exit status 0 (successful).
+  INFO [bfd4fc13] Running /usr/bin/env ln -s /home/gopi/stock/releases/20160706092837 /home/gopi/stock/releases/current as gopi@52.27.118.58
+ DEBUG [bfd4fc13] Command: /usr/bin/env ln -s /home/gopi/stock/releases/20160706092837 /home/gopi/stock/releases/current
+  INFO [bfd4fc13] Finished in 0.466 seconds with exit status 0 (successful).
+  INFO [a1a1977f] Running /usr/bin/env mv /home/gopi/stock/releases/current /home/gopi/stock as gopi@52.27.118.58
+ DEBUG [a1a1977f] Command: /usr/bin/env mv /home/gopi/stock/releases/current /home/gopi/stock
+  INFO [a1a1977f] Finished in 0.462 seconds with exit status 0 (successful).
+ DEBUG [32837eb4] Running /usr/bin/env ls -xtr /home/gopi/stock/releases as gopi@52.27.118.58
+ DEBUG [32837eb4] Command: /usr/bin/env ls -xtr /home/gopi/stock/releases
+ DEBUG [32837eb4] 	20160706075326	20160706075643	20160706080044	20160706092210	20160706092430
+20160706092837
+ DEBUG [32837eb4] Finished in 0.464 seconds with exit status 0 (successful).
+  INFO Keeping 5 of 6 deployed releases on 52.27.118.58
+  INFO [76b54788] Running /usr/bin/env rm -rf /home/gopi/stock/releases/20160706075326 as gopi@52.27.118.58
+ DEBUG [76b54788] Command: /usr/bin/env rm -rf /home/gopi/stock/releases/20160706075326
+  INFO [76b54788] Finished in 0.473 seconds with exit status 0 (successful).
+ DEBUG [a04c68bd] Running if test ! -d /home/gopi/stock/releases; then echo "Directory does not exist '/home/gopi/stock/releases'" 1>&2; false; fi as gopi@52.27.118.58
+ DEBUG [a04c68bd] Command: if test ! -d /home/gopi/stock/releases; then echo "Directory does not exist '/home/gopi/stock/releases'" 1>&2; false; fi
+ DEBUG [a04c68bd] Finished in 0.460 seconds with exit status 0 (successful).
+  INFO [95ed744d] Running /usr/bin/env echo "Branch master (at edec858a6983a7dc9535bdadf123408b62a49fd8) deployed as release 20160706092837 by iforum" >> /home/gopi/stock/revisions.log as gopi@52.27.118.58
+ DEBUG [95ed744d] Command: cd /home/gopi/stock/releases && /usr/bin/env echo "Branch master (at edec858a6983a7dc9535bdadf123408b62a49fd8) deployed as release 20160706092837 by iforum" >> /home/gopi/stock/revisions.log
+  INFO [95ed744d] Finished in 0.458 seconds with exit status 0 (successful).
+ DEBUG [c9086c54] Running if test ! -d /home/gopi/stock/current; then echo "Directory does not exist '/home/gopi/stock/current'" 1>&2; false; fi as gopi@52.27.118.58
+ DEBUG [c9086c54] Command: if test ! -d /home/gopi/stock/current; then echo "Directory does not exist '/home/gopi/stock/current'" 1>&2; false; fi
+ DEBUG [c9086c54] Finished in 0.457 seconds with exit status 0 (successful).
+ DEBUG [3d2090c0] Running [ -f /home/gopi/stock/shared/tmp/pids/puma.pid ] as gopi@52.27.118.58
+ DEBUG [3d2090c0] Command: [ -f /home/gopi/stock/shared/tmp/pids/puma.pid ]
+ DEBUG [3d2090c0] Finished in 0.472 seconds with exit status 1 (failed).
+ DEBUG [3f2b02b6] Running [ -f /home/gopi/stock/shared/puma.rb ] as gopi@52.27.118.58
+ DEBUG [3f2b02b6] Command: [ -f /home/gopi/stock/shared/puma.rb ]
+ DEBUG [3f2b02b6] Finished in 0.470 seconds with exit status 0 (successful).
+  INFO using conf file /home/gopi/stock/shared/puma.rb
+ DEBUG [c42263eb] Running if test ! -d /home/gopi/stock/current; then echo "Directory does not exist '/home/gopi/stock/current'" 1>&2; false; fi as gopi@52.27.118.58
+ DEBUG [c42263eb] Command: if test ! -d /home/gopi/stock/current; then echo "Directory does not exist '/home/gopi/stock/current'" 1>&2; false; fi
+ DEBUG [c42263eb] Finished in 0.513 seconds with exit status 0 (successful).
+  INFO [25efd45e] Running ~/.rvm/bin/rvm ruby-2.2.0 do bundle exec puma -C /home/gopi/stock/shared/puma.rb --daemon as gopi@52.27.118.58
+ DEBUG [25efd45e] Command: cd /home/gopi/stock/current && ( export RACK_ENV="production" ; ~/.rvm/bin/rvm ruby-2.2.0 do bundle exec puma -C /home/gopi/stock/shared/puma.rb --daemon )
+ DEBUG [25efd45e] 	Puma starting in single mode...
+ DEBUG [25efd45e] 	
+ DEBUG [25efd45e] 	* Version 3.4.0 (ruby 2.2.0-p0), codename: Owl Bowl Brawl
+ DEBUG [25efd45e] 	
+ DEBUG [25efd45e] 	* Min threads: 0, max threads: 8
+ DEBUG [25efd45e] 	
+ DEBUG [25efd45e] 	* Environment: production
+ DEBUG [25efd45e] 	
+ DEBUG [25efd45e] 	* Daemonizing...
+ DEBUG [25efd45e] 	
+  INFO [25efd45e] Finished in 1.230 seconds with exit status 0 (successful).
