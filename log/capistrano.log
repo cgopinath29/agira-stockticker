@@ -1,0 +1,363 @@
+# Logfile created on 2016-07-06 13:23:09 +0530 by logger.rb/47272
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-07-06 13:23:09 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [d7d3eeff] Running ~/.rvm/bin/rvm version as gopi@52.27.118.58
+ DEBUG [d7d3eeff] Command: ~/.rvm/bin/rvm version
+ DEBUG [d7d3eeff] 	rvm 1.27.0 (latest) by Wayne E. Seguin <wayneeseguin@gmail.com>, Michal Papis <mpapis@gmail.com> [https://rvm.io/]
+ DEBUG [d7d3eeff] 	
+ DEBUG [d7d3eeff] Finished in 3.886 seconds with exit status 0 (successful).
+ DEBUG [d8ffbb8c] Running ~/.rvm/bin/rvm current as gopi@52.27.118.58
+ DEBUG [d8ffbb8c] Command: ~/.rvm/bin/rvm current
+ DEBUG [d8ffbb8c] 	ruby-2.2.0
+ DEBUG [d8ffbb8c] 	
+ DEBUG [d8ffbb8c] Finished in 2.926 seconds with exit status 0 (successful).
+ DEBUG [282ccc75] Running ~/.rvm/bin/rvm ruby-2.2.0 do ruby --version as gopi@52.27.118.58
+ DEBUG [282ccc75] Command: ~/.rvm/bin/rvm ruby-2.2.0 do ruby --version
+ DEBUG [282ccc75] 	ruby 2.2.0p0 (2014-12-25 revision 49005) [x86_64-linux]
+ DEBUG [282ccc75] 	
+ DEBUG [282ccc75] Finished in 0.677 seconds with exit status 0 (successful).
+  INFO [0ae6ec65] Running /usr/bin/env mkdir -p /tmp/stock/ as gopi@52.27.118.58
+ DEBUG [0ae6ec65] Command: /usr/bin/env mkdir -p /tmp/stock/
+  INFO [0ae6ec65] Finished in 0.458 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/stock/git-ssh.sh 0.0%
+  INFO Uploading /tmp/stock/git-ssh.sh 100.0%
+  INFO [12bc8594] Running /usr/bin/env chmod +rx /tmp/stock/git-ssh.sh as gopi@52.27.118.58
+ DEBUG [12bc8594] Command: /usr/bin/env chmod +rx /tmp/stock/git-ssh.sh
+  INFO [12bc8594] Finished in 0.458 seconds with exit status 0 (successful).
+  INFO [5863e6e8] Running /usr/bin/env git ls-remote --heads git@github.com:cgopinath29/agira-stockticker.git as gopi@52.27.118.58
+ DEBUG [5863e6e8] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/stock/git-ssh.sh" ; /usr/bin/env git ls-remote --heads git@github.com:cgopinath29/agira-stockticker.git )
+ DEBUG [5863e6e8] 	788290a32e4f5aff2d05c57f39925600c83ebee0
+ DEBUG [5863e6e8] 		
+ DEBUG [5863e6e8] 	refs/heads/master
+ DEBUG [5863e6e8] 	
+  INFO [5863e6e8] Finished in 2.265 seconds with exit status 0 (successful).
+  INFO [346a7d7a] Running /usr/bin/env mkdir -p /home/gopi/stock/shared /home/gopi/stock/releases as gopi@52.27.118.58
+ DEBUG [346a7d7a] Command: /usr/bin/env mkdir -p /home/gopi/stock/shared /home/gopi/stock/releases
+  INFO [346a7d7a] Finished in 0.466 seconds with exit status 0 (successful).
+  INFO [e6b07e41] Running /usr/bin/env mkdir -p /home/gopi/stock/shared/bin /home/gopi/stock/shared/log /home/gopi/stock/shared/tmp/pids /home/gopi/stock/shared/tmp/cache /home/gopi/stock/shared/tmp/sockets /home/gopi/stock/shared/vendor/bundle /home/gopi/stock/shared/public/system /home/gopi/stock/shared/public/uploads /home/gopi/stock/shared/public/assets as gopi@52.27.118.58
+ DEBUG [e6b07e41] Command: /usr/bin/env mkdir -p /home/gopi/stock/shared/bin /home/gopi/stock/shared/log /home/gopi/stock/shared/tmp/pids /home/gopi/stock/shared/tmp/cache /home/gopi/stock/shared/tmp/sockets /home/gopi/stock/shared/vendor/bundle /home/gopi/stock/shared/public/system /home/gopi/stock/shared/public/uploads /home/gopi/stock/shared/public/assets
+  INFO [e6b07e41] Finished in 0.459 seconds with exit status 0 (successful).
+  INFO [e37fbf25] Running /usr/bin/env mkdir -p /home/gopi/stock/shared/config as gopi@52.27.118.58
+ DEBUG [e37fbf25] Command: /usr/bin/env mkdir -p /home/gopi/stock/shared/config
+  INFO [e37fbf25] Finished in 0.457 seconds with exit status 0 (successful).
+ DEBUG [c9f0f332] Running [ -f /home/gopi/stock/shared/config/database.yml ] as gopi@52.27.118.58
+ DEBUG [c9f0f332] Command: [ -f /home/gopi/stock/shared/config/database.yml ]
+ DEBUG [c9f0f332] Finished in 0.457 seconds with exit status 0 (successful).
+ DEBUG [e36b71ed] Running [ -f /home/gopi/stock/shared/config/application.yml ] as gopi@52.27.118.58
+ DEBUG [e36b71ed] Command: [ -f /home/gopi/stock/shared/config/application.yml ]
+ DEBUG [e36b71ed] Finished in 0.459 seconds with exit status 0 (successful).
+ DEBUG [9baaf89c] Running [ -f /home/gopi/stock/shared/puma.rb ] as gopi@52.27.118.58
+ DEBUG [9baaf89c] Command: [ -f /home/gopi/stock/shared/puma.rb ]
+ DEBUG [9baaf89c] Finished in 0.463 seconds with exit status 1 (failed).
+  WARN puma.rb NOT FOUND!
+ DEBUG Uploading /home/gopi/stock/shared/puma.rb 0.0%
+  INFO Uploading /home/gopi/stock/shared/puma.rb 100.0%
+  INFO puma.rb generated
+ DEBUG [2774d24c] Running [ -f /home/gopi/stock/current/REVISION ] as gopi@52.27.118.58
+ DEBUG [2774d24c] Command: [ -f /home/gopi/stock/current/REVISION ]
+ DEBUG [2774d24c] Finished in 0.458 seconds with exit status 1 (failed).
+ DEBUG [7452f640] Running [ -f /home/gopi/stock/repo/HEAD ] as gopi@52.27.118.58
+ DEBUG [7452f640] Command: [ -f /home/gopi/stock/repo/HEAD ]
+ DEBUG [7452f640] Finished in 0.460 seconds with exit status 1 (failed).
+ DEBUG [9568a1bc] Running if test ! -d /home/gopi/stock; then echo "Directory does not exist '/home/gopi/stock'" 1>&2; false; fi as gopi@52.27.118.58
+ DEBUG [9568a1bc] Command: if test ! -d /home/gopi/stock; then echo "Directory does not exist '/home/gopi/stock'" 1>&2; false; fi
+ DEBUG [9568a1bc] Finished in 0.471 seconds with exit status 0 (successful).
+  INFO [beedd861] Running /usr/bin/env git clone --mirror git@github.com:cgopinath29/agira-stockticker.git /home/gopi/stock/repo as gopi@52.27.118.58
+ DEBUG [beedd861] Command: cd /home/gopi/stock && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/stock/git-ssh.sh" ; /usr/bin/env git clone --mirror git@github.com:cgopinath29/agira-stockticker.git /home/gopi/stock/repo )
+ DEBUG [beedd861] 	Cloning into bare repository '/home/gopi/stock/repo'...
+ DEBUG [beedd861] 	remote: Counting objects: 317, done.[K
+ DEBUG [beedd861] 	
+ DEBUG [beedd861] 	remote: Compressing objects:  12% (1/8)   [K
+ DEBUG [beedd861] 	remote: Compressing objects:  25% (2/8)   [K
+ DEBUG [beedd861] 	remote: Compressing objects:  37% (3/8)   [K
+ DEBUG [beedd861] 	remote: Compressing objects:  50% (4/8)   [K
+ DEBUG [beedd861] 	remote: Compressing objects:  62% (5/8)   [K
+ DEBUG [beedd861] 	remote: Compressing objects:  75% (6/8)   [K
+ DEBUG [beedd861] 	remote: Compressing objects:  87% (7/8)   [K
+ DEBUG [beedd861] 	remote: Compressing objects: 100% (8/8)   [K
+ DEBUG [beedd861] 	remote: Compressing objects: 100% (8/8), done.[K
+ DEBUG [beedd861] 	
+ DEBUG [beedd861] 	Receiving objects:   0% (1/317)   
+ DEBUG [beedd861] 	Receiving objects:   1% (4/317)   
+ DEBUG [beedd861] 	Receiving objects:   2% (7/317)   
+ DEBUG [beedd861] 	Receiving objects:   3% (10/317)   
+ DEBUG [beedd861] 	Receiving objects:   4% (13/317)   
+ DEBUG [beedd861] 	Receiving objects:   5% (16/317)   
+ DEBUG [beedd861] 	Receiving objects:   6% (20/317)   
+ DEBUG [beedd861] 	Receiving objects:   7% (23/317)   
+ DEBUG [beedd861] 	Receiving objects:   8% (26/317)   
+ DEBUG [beedd861] 	Receiving objects:   9% (29/317)   
+ DEBUG [beedd861] 	Receiving objects:  10% (32/317)   
+ DEBUG [beedd861] 	Receiving objects:  11% (35/317)   
+ DEBUG [beedd861] 	Receiving objects:  12% (39/317)   
+ DEBUG [beedd861] 	Receiving objects:  13% (42/317)   
+ DEBUG [beedd861] 	Receiving objects:  14% (45/317)   
+ DEBUG [beedd861] 	Receiving objects:  15% (48/317)   
+ DEBUG [beedd861] 	Receiving objects:  16% (51/317)   
+ DEBUG [beedd861] 	Receiving objects:  17% (54/317)   
+ DEBUG [beedd861] 	Receiving objects:  18% (58/317)   
+ DEBUG [beedd861] 	Receiving objects:  19% (61/317)   
+ DEBUG [beedd861] 	Receiving objects:  20% (64/317)   
+ DEBUG [beedd861] 	Receiving objects:  21% (67/317)   
+ DEBUG [beedd861] 	Receiving objects:  22% (70/317)   
+ DEBUG [beedd861] 	Receiving objects:  23% (73/317)   
+ DEBUG [beedd861] 	Receiving objects:  24% (77/317)   
+ DEBUG [beedd861] 	Receiving objects:  25% (80/317)   
+ DEBUG [beedd861] 	Receiving objects:  26% (83/317)   
+ DEBUG [beedd861] 	Receiving objects:  27% (86/317)   
+ DEBUG [beedd861] 	Receiving objects:  28% (89/317)   
+ DEBUG [beedd861] 	Receiving objects:  29% (92/317)   
+ DEBUG [beedd861] 	Receiving objects:  30% (96/317)   
+ DEBUG [beedd861] 	Receiving objects:  31% (99/317)   
+ DEBUG [beedd861] 	Receiving objects:  32% (102/317)   
+ DEBUG [beedd861] 	Receiving objects:  33% (105/317)   
+ DEBUG [beedd861] 	Receiving objects:  34% (108/317)   
+ DEBUG [beedd861] 	Receiving objects:  35% (111/317)   
+ DEBUG [beedd861] 	Receiving objects:  36% (115/317)   
+ DEBUG [beedd861] 	Receiving objects:  37% (118/317)   
+ DEBUG [beedd861] 	Receiving objects:  38% (121/317)   
+ DEBUG [beedd861] 	Receiving objects:  39% (124/317)   
+ DEBUG [beedd861] 	Receiving objects:  40% (127/317)   
+ DEBUG [beedd861] 	Receiving objects:  41% (130/317)   
+ DEBUG [beedd861] 	Receiving objects:  42% (134/317)   
+ DEBUG [beedd861] 	Receiving objects:  43% (137/317)   
+ DEBUG [beedd861] 	Receiving objects:  44% (140/317)   
+ DEBUG [beedd861] 	Receiving objects:  45% (143/317)   
+ DEBUG [beedd861] 	Receiving objects:  46% (146/317)   
+ DEBUG [beedd861] 	Receiving objects:  47% (149/317)   
+ DEBUG [beedd861] 	Receiving objects:  48% (153/317)   
+ DEBUG [beedd861] 	Receiving objects:  49% (156/317)   
+ DEBUG [beedd861] 	Receiving objects:  50% (159/317)   
+ DEBUG [beedd861] 	Receiving objects:  51% (162/317)   
+ DEBUG [beedd861] 	Receiving objects:  52% (165/317)   
+ DEBUG [beedd861] 	Receiving objects:  53% (169/317)   
+ DEBUG [beedd861] 	Receiving objects:  54% (172/317)   
+ DEBUG [beedd861] 	Receiving objects:  55% (175/317)   
+ DEBUG [beedd861] 	Receiving objects:  56% (178/317)   
+ DEBUG [beedd861] 	Receiving objects:  57% (181/317)   
+ DEBUG [beedd861] 	Receiving objects:  58% (184/317)   
+ DEBUG [beedd861] 	Receiving objects:  59% (188/317)   
+ DEBUG [beedd861] 	Receiving objects:  60% (191/317)   
+ DEBUG [beedd861] 	Receiving objects:  61% (194/317)   
+ DEBUG [beedd861] 	Receiving objects:  62% (197/317)   
+ DEBUG [beedd861] 	Receiving objects:  63% (200/317)   
+ DEBUG [beedd861] 	Receiving objects:  64% (203/317)   
+ DEBUG [beedd861] 	Receiving objects:  65% (207/317)   
+ DEBUG [beedd861] 	Receiving objects:  66% (210/317)   
+ DEBUG [beedd861] 	Receiving objects:  67% (213/317)   
+ DEBUG [beedd861] 	Receiving objects:  68% (216/317)   
+ DEBUG [beedd861] 	Receiving objects:  69% (219/317)   
+ DEBUG [beedd861] 	Receiving objects:  70% (222/317)   
+ DEBUG [beedd861] 	Receiving objects:  71% (226/317)   
+ DEBUG [beedd861] 	Receiving objects:  72% (229/317)   
+ DEBUG [beedd861] 	Receiving objects:  73% (232/317)   
+ DEBUG [beedd861] 	Receiving objects:  74% (235/317)   
+ DEBUG [beedd861] 	Receiving objects:  75% (238/317)   
+ DEBUG [beedd861] 	Receiving objects:  76% (241/317)   
+ DEBUG [beedd861] 	Receiving objects:  77% (245/317)   
+ DEBUG [beedd861] 	Receiving objects:  78% (248/317)   
+ DEBUG [beedd861] 	Receiving objects:  79% (251/317)   
+ DEBUG [beedd861] 	Receiving objects:  80% (254/317)   
+ DEBUG [beedd861] 	Receiving objects:  81% (257/317)   
+ DEBUG [beedd861] 	Receiving objects:  82% (260/317)   
+ DEBUG [beedd861] 	Receiving objects:  83% (264/317)   
+ DEBUG [beedd861] 	Receiving objects:  84% (267/317)   
+ DEBUG [beedd861] 	Receiving objects:  85% (270/317)   
+ DEBUG [beedd861] 	Receiving objects:  86% (273/317)   
+ DEBUG [beedd861] 	Receiving objects:  87% (276/317)   
+ DEBUG [beedd861] 	Receiving objects:  88% (279/317)   
+ DEBUG [beedd861] 	Receiving objects:  89% (283/317)   
+ DEBUG [beedd861] 	remote: Total 317 (delta 0), reused 0 (delta 0), pack-reused 308[K
+ DEBUG [beedd861] 	
+ DEBUG [beedd861] 	Receiving objects:  90% (286/317)   
+ DEBUG [beedd861] 	Receiving objects:  91% (289/317)   
+ DEBUG [beedd861] 	Receiving objects:  92% (292/317)   
+ DEBUG [beedd861] 	Receiving objects:  93% (295/317)   
+ DEBUG [beedd861] 	Receiving objects:  94% (298/317)   
+ DEBUG [beedd861] 	Receiving objects:  95% (302/317)   
+ DEBUG [beedd861] 	Receiving objects:  96% (305/317)   
+ DEBUG [beedd861] 	Receiving objects:  97% (308/317)   
+ DEBUG [beedd861] 	Receiving objects:  98% (311/317)   
+ DEBUG [beedd861] 	Receiving objects:  99% (314/317)   
+ DEBUG [beedd861] 	Receiving objects: 100% (317/317)   
+ DEBUG [beedd861] 	Receiving objects: 100% (317/317), 974.33 KiB | 0 bytes/s, done.
+ DEBUG [beedd861] 	
+ DEBUG [beedd861] 	Resolving deltas:   0% (0/31)   
+ DEBUG [beedd861] 	Resolving deltas:  12% (4/31)   
+ DEBUG [beedd861] 	Resolving deltas:  16% (5/31)   
+ DEBUG [beedd861] 	Resolving deltas:  19% (6/31)   
+ DEBUG [beedd861] 	Resolving deltas:  29% (9/31)   
+ DEBUG [beedd861] 	Resolving deltas:  32% (10/31)   
+ DEBUG [beedd861] 	Resolving deltas:  38% (12/31)   
+ DEBUG [beedd861] 	Resolving deltas:  41% (13/31)   
+ DEBUG [beedd861] 	Resolving deltas:  48% (15/31)   
+ DEBUG [beedd861] 	Resolving deltas:  51% (16/31)   
+ DEBUG [beedd861] 	Resolving deltas:  61% (19/31)   
+ DEBUG [beedd861] 	Resolving deltas:  74% (23/31)   
+ DEBUG [beedd861] 	Resolving deltas:  90% (28/31)   
+ DEBUG [beedd861] 	Resolving deltas:  93% (29/31)   
+ DEBUG [beedd861] 	Resolving deltas:  96% (30/31)   
+ DEBUG [beedd861] 	Resolving deltas: 100% (31/31)   
+ DEBUG [beedd861] 	Resolving deltas: 100% (31/31), done.
+ DEBUG [beedd861] 	
+ DEBUG [beedd861] 	Checking connectivity... 
+ DEBUG [beedd861] 	done.
+ DEBUG [beedd861] 	
+  INFO [beedd861] Finished in 2.693 seconds with exit status 0 (successful).
+ DEBUG [b2493e56] Running if test ! -d /home/gopi/stock/repo; then echo "Directory does not exist '/home/gopi/stock/repo'" 1>&2; false; fi as gopi@52.27.118.58
+ DEBUG [b2493e56] Command: if test ! -d /home/gopi/stock/repo; then echo "Directory does not exist '/home/gopi/stock/repo'" 1>&2; false; fi
+ DEBUG [b2493e56] Finished in 0.460 seconds with exit status 0 (successful).
+  INFO [7a5bcd2b] Running /usr/bin/env git remote update --prune as gopi@52.27.118.58
+ DEBUG [7a5bcd2b] Command: cd /home/gopi/stock/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/stock/git-ssh.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [7a5bcd2b] 	Fetching origin
+ DEBUG [7a5bcd2b] 	
+  INFO [7a5bcd2b] Finished in 1.990 seconds with exit status 0 (successful).
+ DEBUG [7b16e86e] Running if test ! -d /home/gopi/stock/repo; then echo "Directory does not exist '/home/gopi/stock/repo'" 1>&2; false; fi as gopi@52.27.118.58
+ DEBUG [7b16e86e] Command: if test ! -d /home/gopi/stock/repo; then echo "Directory does not exist '/home/gopi/stock/repo'" 1>&2; false; fi
+ DEBUG [7b16e86e] Finished in 0.458 seconds with exit status 0 (successful).
+  INFO [a5015ff1] Running /usr/bin/env mkdir -p /home/gopi/stock/releases/20160706075326 as gopi@52.27.118.58
+ DEBUG [a5015ff1] Command: cd /home/gopi/stock/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/stock/git-ssh.sh" ; /usr/bin/env mkdir -p /home/gopi/stock/releases/20160706075326 )
+  INFO [a5015ff1] Finished in 0.462 seconds with exit status 0 (successful).
+  INFO [b37b8ee6] Running /usr/bin/env git archive master | tar -x -f - -C /home/gopi/stock/releases/20160706075326 as gopi@52.27.118.58
+ DEBUG [b37b8ee6] Command: cd /home/gopi/stock/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/stock/git-ssh.sh" ; /usr/bin/env git archive master | tar -x -f - -C /home/gopi/stock/releases/20160706075326 )
+  INFO [b37b8ee6] Finished in 0.493 seconds with exit status 0 (successful).
+ DEBUG [fc6146bc] Running if test ! -d /home/gopi/stock/repo; then echo "Directory does not exist '/home/gopi/stock/repo'" 1>&2; false; fi as gopi@52.27.118.58
+ DEBUG [fc6146bc] Command: if test ! -d /home/gopi/stock/repo; then echo "Directory does not exist '/home/gopi/stock/repo'" 1>&2; false; fi
+ DEBUG [fc6146bc] Finished in 0.462 seconds with exit status 0 (successful).
+ DEBUG [7a795f51] Running /usr/bin/env git rev-list --max-count=1 master as gopi@52.27.118.58
+ DEBUG [7a795f51] Command: cd /home/gopi/stock/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/stock/git-ssh.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [7a795f51] 	788290a32e4f5aff2d05c57f39925600c83ebee0
+ DEBUG [7a795f51] Finished in 0.459 seconds with exit status 0 (successful).
+ DEBUG [0d59af05] Running if test ! -d /home/gopi/stock/releases/20160706075326; then echo "Directory does not exist '/home/gopi/stock/releases/20160706075326'" 1>&2; false; fi as gopi@52.27.118.58
+ DEBUG [0d59af05] Command: if test ! -d /home/gopi/stock/releases/20160706075326; then echo "Directory does not exist '/home/gopi/stock/releases/20160706075326'" 1>&2; false; fi
+ DEBUG [0d59af05] Finished in 0.461 seconds with exit status 0 (successful).
+  INFO [a198502e] Running /usr/bin/env echo "788290a32e4f5aff2d05c57f39925600c83ebee0" >> REVISION as gopi@52.27.118.58
+ DEBUG [a198502e] Command: cd /home/gopi/stock/releases/20160706075326 && /usr/bin/env echo "788290a32e4f5aff2d05c57f39925600c83ebee0" >> REVISION
+  INFO [a198502e] Finished in 0.467 seconds with exit status 0 (successful).
+  INFO [dfab231a] Running /usr/bin/env mkdir -p /home/gopi/stock/releases/20160706075326/config as gopi@52.27.118.58
+ DEBUG [dfab231a] Command: /usr/bin/env mkdir -p /home/gopi/stock/releases/20160706075326/config
+  INFO [dfab231a] Finished in 0.468 seconds with exit status 0 (successful).
+ DEBUG [32c6c5f4] Running [ -L /home/gopi/stock/releases/20160706075326/config/database.yml ] as gopi@52.27.118.58
+ DEBUG [32c6c5f4] Command: [ -L /home/gopi/stock/releases/20160706075326/config/database.yml ]
+ DEBUG [32c6c5f4] Finished in 0.453 seconds with exit status 1 (failed).
+ DEBUG [e3f59ad4] Running [ -f /home/gopi/stock/releases/20160706075326/config/database.yml ] as gopi@52.27.118.58
+ DEBUG [e3f59ad4] Command: [ -f /home/gopi/stock/releases/20160706075326/config/database.yml ]
+ DEBUG [e3f59ad4] Finished in 0.454 seconds with exit status 0 (successful).
+  INFO [db41b3a8] Running /usr/bin/env rm /home/gopi/stock/releases/20160706075326/config/database.yml as gopi@52.27.118.58
+ DEBUG [db41b3a8] Command: /usr/bin/env rm /home/gopi/stock/releases/20160706075326/config/database.yml
+  INFO [db41b3a8] Finished in 0.456 seconds with exit status 0 (successful).
+  INFO [d03e4035] Running /usr/bin/env ln -s /home/gopi/stock/shared/config/database.yml /home/gopi/stock/releases/20160706075326/config/database.yml as gopi@52.27.118.58
+ DEBUG [d03e4035] Command: /usr/bin/env ln -s /home/gopi/stock/shared/config/database.yml /home/gopi/stock/releases/20160706075326/config/database.yml
+  INFO [d03e4035] Finished in 0.470 seconds with exit status 0 (successful).
+ DEBUG [ccd28eab] Running [ -L /home/gopi/stock/releases/20160706075326/config/application.yml ] as gopi@52.27.118.58
+ DEBUG [ccd28eab] Command: [ -L /home/gopi/stock/releases/20160706075326/config/application.yml ]
+ DEBUG [ccd28eab] Finished in 0.472 seconds with exit status 1 (failed).
+ DEBUG [7e6c20f6] Running [ -f /home/gopi/stock/releases/20160706075326/config/application.yml ] as gopi@52.27.118.58
+ DEBUG [7e6c20f6] Command: [ -f /home/gopi/stock/releases/20160706075326/config/application.yml ]
+ DEBUG [7e6c20f6] Finished in 0.468 seconds with exit status 1 (failed).
+  INFO [fe342a1f] Running /usr/bin/env ln -s /home/gopi/stock/shared/config/application.yml /home/gopi/stock/releases/20160706075326/config/application.yml as gopi@52.27.118.58
+ DEBUG [fe342a1f] Command: /usr/bin/env ln -s /home/gopi/stock/shared/config/application.yml /home/gopi/stock/releases/20160706075326/config/application.yml
+  INFO [fe342a1f] Finished in 0.463 seconds with exit status 0 (successful).
+  INFO [39ad5587] Running /usr/bin/env mkdir -p /home/gopi/stock/releases/20160706075326 /home/gopi/stock/releases/20160706075326/tmp /home/gopi/stock/releases/20160706075326/vendor /home/gopi/stock/releases/20160706075326/public as gopi@52.27.118.58
+ DEBUG [39ad5587] Command: /usr/bin/env mkdir -p /home/gopi/stock/releases/20160706075326 /home/gopi/stock/releases/20160706075326/tmp /home/gopi/stock/releases/20160706075326/vendor /home/gopi/stock/releases/20160706075326/public
+  INFO [39ad5587] Finished in 0.464 seconds with exit status 0 (successful).
+ DEBUG [ba6483d9] Running [ -L /home/gopi/stock/releases/20160706075326/bin ] as gopi@52.27.118.58
+ DEBUG [ba6483d9] Command: [ -L /home/gopi/stock/releases/20160706075326/bin ]
+ DEBUG [ba6483d9] Finished in 0.463 seconds with exit status 1 (failed).
+ DEBUG [91b9b0c1] Running [ -d /home/gopi/stock/releases/20160706075326/bin ] as gopi@52.27.118.58
+ DEBUG [91b9b0c1] Command: [ -d /home/gopi/stock/releases/20160706075326/bin ]
+ DEBUG [91b9b0c1] Finished in 0.457 seconds with exit status 0 (successful).
+  INFO [1f8cfbba] Running /usr/bin/env rm -rf /home/gopi/stock/releases/20160706075326/bin as gopi@52.27.118.58
+ DEBUG [1f8cfbba] Command: /usr/bin/env rm -rf /home/gopi/stock/releases/20160706075326/bin
+  INFO [1f8cfbba] Finished in 0.457 seconds with exit status 0 (successful).
+  INFO [030560a3] Running /usr/bin/env ln -s /home/gopi/stock/shared/bin /home/gopi/stock/releases/20160706075326/bin as gopi@52.27.118.58
+ DEBUG [030560a3] Command: /usr/bin/env ln -s /home/gopi/stock/shared/bin /home/gopi/stock/releases/20160706075326/bin
+  INFO [030560a3] Finished in 0.457 seconds with exit status 0 (successful).
+ DEBUG [f3d880d9] Running [ -L /home/gopi/stock/releases/20160706075326/log ] as gopi@52.27.118.58
+ DEBUG [f3d880d9] Command: [ -L /home/gopi/stock/releases/20160706075326/log ]
+ DEBUG [f3d880d9] Finished in 0.458 seconds with exit status 1 (failed).
+ DEBUG [17c429bd] Running [ -d /home/gopi/stock/releases/20160706075326/log ] as gopi@52.27.118.58
+ DEBUG [17c429bd] Command: [ -d /home/gopi/stock/releases/20160706075326/log ]
+ DEBUG [17c429bd] Finished in 0.465 seconds with exit status 0 (successful).
+  INFO [88b194de] Running /usr/bin/env rm -rf /home/gopi/stock/releases/20160706075326/log as gopi@52.27.118.58
+ DEBUG [88b194de] Command: /usr/bin/env rm -rf /home/gopi/stock/releases/20160706075326/log
+  INFO [88b194de] Finished in 0.460 seconds with exit status 0 (successful).
+  INFO [e2010c9e] Running /usr/bin/env ln -s /home/gopi/stock/shared/log /home/gopi/stock/releases/20160706075326/log as gopi@52.27.118.58
+ DEBUG [e2010c9e] Command: /usr/bin/env ln -s /home/gopi/stock/shared/log /home/gopi/stock/releases/20160706075326/log
+  INFO [e2010c9e] Finished in 0.457 seconds with exit status 0 (successful).
+ DEBUG [d15b6c71] Running [ -L /home/gopi/stock/releases/20160706075326/tmp/pids ] as gopi@52.27.118.58
+ DEBUG [d15b6c71] Command: [ -L /home/gopi/stock/releases/20160706075326/tmp/pids ]
+ DEBUG [d15b6c71] Finished in 0.456 seconds with exit status 1 (failed).
+ DEBUG [043db75f] Running [ -d /home/gopi/stock/releases/20160706075326/tmp/pids ] as gopi@52.27.118.58
+ DEBUG [043db75f] Command: [ -d /home/gopi/stock/releases/20160706075326/tmp/pids ]
+ DEBUG [043db75f] Finished in 0.459 seconds with exit status 1 (failed).
+  INFO [3023251b] Running /usr/bin/env ln -s /home/gopi/stock/shared/tmp/pids /home/gopi/stock/releases/20160706075326/tmp/pids as gopi@52.27.118.58
+ DEBUG [3023251b] Command: /usr/bin/env ln -s /home/gopi/stock/shared/tmp/pids /home/gopi/stock/releases/20160706075326/tmp/pids
+  INFO [3023251b] Finished in 0.457 seconds with exit status 0 (successful).
+ DEBUG [3e952615] Running [ -L /home/gopi/stock/releases/20160706075326/tmp/cache ] as gopi@52.27.118.58
+ DEBUG [3e952615] Command: [ -L /home/gopi/stock/releases/20160706075326/tmp/cache ]
+ DEBUG [3e952615] Finished in 0.461 seconds with exit status 1 (failed).
+ DEBUG [f3fbada9] Running [ -d /home/gopi/stock/releases/20160706075326/tmp/cache ] as gopi@52.27.118.58
+ DEBUG [f3fbada9] Command: [ -d /home/gopi/stock/releases/20160706075326/tmp/cache ]
+ DEBUG [f3fbada9] Finished in 0.458 seconds with exit status 0 (successful).
+  INFO [e2bfca86] Running /usr/bin/env rm -rf /home/gopi/stock/releases/20160706075326/tmp/cache as gopi@52.27.118.58
+ DEBUG [e2bfca86] Command: /usr/bin/env rm -rf /home/gopi/stock/releases/20160706075326/tmp/cache
+  INFO [e2bfca86] Finished in 0.464 seconds with exit status 0 (successful).
+  INFO [474e627c] Running /usr/bin/env ln -s /home/gopi/stock/shared/tmp/cache /home/gopi/stock/releases/20160706075326/tmp/cache as gopi@52.27.118.58
+ DEBUG [474e627c] Command: /usr/bin/env ln -s /home/gopi/stock/shared/tmp/cache /home/gopi/stock/releases/20160706075326/tmp/cache
+  INFO [474e627c] Finished in 0.457 seconds with exit status 0 (successful).
+ DEBUG [93669ef8] Running [ -L /home/gopi/stock/releases/20160706075326/tmp/sockets ] as gopi@52.27.118.58
+ DEBUG [93669ef8] Command: [ -L /home/gopi/stock/releases/20160706075326/tmp/sockets ]
+ DEBUG [93669ef8] Finished in 0.457 seconds with exit status 1 (failed).
+ DEBUG [74a1efc1] Running [ -d /home/gopi/stock/releases/20160706075326/tmp/sockets ] as gopi@52.27.118.58
+ DEBUG [74a1efc1] Command: [ -d /home/gopi/stock/releases/20160706075326/tmp/sockets ]
+ DEBUG [74a1efc1] Finished in 0.458 seconds with exit status 1 (failed).
+  INFO [aee16bf1] Running /usr/bin/env ln -s /home/gopi/stock/shared/tmp/sockets /home/gopi/stock/releases/20160706075326/tmp/sockets as gopi@52.27.118.58
+ DEBUG [aee16bf1] Command: /usr/bin/env ln -s /home/gopi/stock/shared/tmp/sockets /home/gopi/stock/releases/20160706075326/tmp/sockets
+  INFO [aee16bf1] Finished in 0.461 seconds with exit status 0 (successful).
+ DEBUG [2aef841d] Running [ -L /home/gopi/stock/releases/20160706075326/vendor/bundle ] as gopi@52.27.118.58
+ DEBUG [2aef841d] Command: [ -L /home/gopi/stock/releases/20160706075326/vendor/bundle ]
+ DEBUG [2aef841d] Finished in 0.464 seconds with exit status 1 (failed).
+ DEBUG [9fa8e895] Running [ -d /home/gopi/stock/releases/20160706075326/vendor/bundle ] as gopi@52.27.118.58
+ DEBUG [9fa8e895] Command: [ -d /home/gopi/stock/releases/20160706075326/vendor/bundle ]
+ DEBUG [9fa8e895] Finished in 0.457 seconds with exit status 1 (failed).
+  INFO [62999a2e] Running /usr/bin/env ln -s /home/gopi/stock/shared/vendor/bundle /home/gopi/stock/releases/20160706075326/vendor/bundle as gopi@52.27.118.58
+ DEBUG [62999a2e] Command: /usr/bin/env ln -s /home/gopi/stock/shared/vendor/bundle /home/gopi/stock/releases/20160706075326/vendor/bundle
+  INFO [62999a2e] Finished in 0.460 seconds with exit status 0 (successful).
+ DEBUG [6a5af44c] Running [ -L /home/gopi/stock/releases/20160706075326/public/system ] as gopi@52.27.118.58
+ DEBUG [6a5af44c] Command: [ -L /home/gopi/stock/releases/20160706075326/public/system ]
+ DEBUG [6a5af44c] Finished in 0.458 seconds with exit status 1 (failed).
+ DEBUG [8468bb6f] Running [ -d /home/gopi/stock/releases/20160706075326/public/system ] as gopi@52.27.118.58
+ DEBUG [8468bb6f] Command: [ -d /home/gopi/stock/releases/20160706075326/public/system ]
+ DEBUG [8468bb6f] Finished in 0.458 seconds with exit status 1 (failed).
+  INFO [914bac0d] Running /usr/bin/env ln -s /home/gopi/stock/shared/public/system /home/gopi/stock/releases/20160706075326/public/system as gopi@52.27.118.58
+ DEBUG [914bac0d] Command: /usr/bin/env ln -s /home/gopi/stock/shared/public/system /home/gopi/stock/releases/20160706075326/public/system
+  INFO [914bac0d] Finished in 0.458 seconds with exit status 0 (successful).
+ DEBUG [dfcb9114] Running [ -L /home/gopi/stock/releases/20160706075326/public/uploads ] as gopi@52.27.118.58
+ DEBUG [dfcb9114] Command: [ -L /home/gopi/stock/releases/20160706075326/public/uploads ]
+ DEBUG [dfcb9114] Finished in 0.459 seconds with exit status 1 (failed).
+ DEBUG [9c0af878] Running [ -d /home/gopi/stock/releases/20160706075326/public/uploads ] as gopi@52.27.118.58
+ DEBUG [9c0af878] Command: [ -d /home/gopi/stock/releases/20160706075326/public/uploads ]
+ DEBUG [9c0af878] Finished in 0.472 seconds with exit status 1 (failed).
+  INFO [a54f94d0] Running /usr/bin/env ln -s /home/gopi/stock/shared/public/uploads /home/gopi/stock/releases/20160706075326/public/uploads as gopi@52.27.118.58
+ DEBUG [a54f94d0] Command: /usr/bin/env ln -s /home/gopi/stock/shared/public/uploads /home/gopi/stock/releases/20160706075326/public/uploads
+  INFO [a54f94d0] Finished in 0.458 seconds with exit status 0 (successful).
+ DEBUG [0e5ceb89] Running [ -L /home/gopi/stock/releases/20160706075326/public/assets ] as gopi@52.27.118.58
+ DEBUG [0e5ceb89] Command: [ -L /home/gopi/stock/releases/20160706075326/public/assets ]
+ DEBUG [0e5ceb89] Finished in 0.465 seconds with exit status 1 (failed).
+ DEBUG [d76dd498] Running [ -d /home/gopi/stock/releases/20160706075326/public/assets ] as gopi@52.27.118.58
+ DEBUG [d76dd498] Command: [ -d /home/gopi/stock/releases/20160706075326/public/assets ]
+ DEBUG [d76dd498] Finished in 0.460 seconds with exit status 1 (failed).
+  INFO [5bae0a28] Running /usr/bin/env ln -s /home/gopi/stock/shared/public/assets /home/gopi/stock/releases/20160706075326/public/assets as gopi@52.27.118.58
+ DEBUG [5bae0a28] Command: /usr/bin/env ln -s /home/gopi/stock/shared/public/assets /home/gopi/stock/releases/20160706075326/public/assets
+  INFO [5bae0a28] Finished in 0.458 seconds with exit status 0 (successful).
+ DEBUG [cbfcc0a3] Running if test ! -d /home/gopi/stock/releases/20160706075326; then echo "Directory does not exist '/home/gopi/stock/releases/20160706075326'" 1>&2; false; fi as gopi@52.27.118.58
+ DEBUG [cbfcc0a3] Command: if test ! -d /home/gopi/stock/releases/20160706075326; then echo "Directory does not exist '/home/gopi/stock/releases/20160706075326'" 1>&2; false; fi
+ DEBUG [cbfcc0a3] Finished in 0.464 seconds with exit status 0 (successful).
+  INFO [868d60cd] Running ~/.rvm/bin/rvm ruby-2.2.0 do bundle install --path /home/gopi/stock/shared/bundle --without development test --deployment --quiet as gopi@52.27.118.58
+ DEBUG [868d60cd] Command: cd /home/gopi/stock/releases/20160706075326 && ~/.rvm/bin/rvm ruby-2.2.0 do bundle install --path /home/gopi/stock/shared/bundle --without development test --deployment --quiet
+ DEBUG [868d60cd] 	[31mAn error occurred while installing mysql2 (0.4.4), and Bundler cannot continue.
+ DEBUG [868d60cd] 	
+ DEBUG [868d60cd] 	Make sure that `gem install mysql2 -v '0.4.4'` succeeds before bundling.[0m
+ DEBUG [868d60cd] 	
