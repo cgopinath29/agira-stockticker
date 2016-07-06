@@ -35,7 +35,13 @@ gem 'devise'
 # gem 'unicorn'
 
 # Use Capistrano for deployment
- gem 'capistrano-rails'
+group :development do
+  gem 'capistrano'
+  gem 'capistrano3-puma'
+  gem 'capistrano-rails', require: false
+  gem 'capistrano-bundler', require: false
+  gem 'capistrano-rvm'
+end
  gem 'puma'
 
 group :development, :test do
